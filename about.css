@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Slackside+One&display=swap');
+/* Animations */
+
+/* Animations ends */
+body{
+    height: 100vh;
+    background: lightcyan;
+    color: #94E65C;
+    display: flex;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.infoBox{
+    position: absolute;
+    top: 13%;
+    height: 80vh;
+    width: 80%;
+    border: 15px solid #94E65C;
+    border-radius: 10px;
+}
+
+.aboutHead{
+    position: absolute;
+    background-color: lightcyan;
+    height: 8vh;
+    width: 8%;
+    top: 10%;
+    left: 12%;
+    z-index: 100;
+    font-size: 45px;
+    text-align: center;
+}
+
+.aboutText{
+    height: 100%;
+    width: 95%;
+    margin-top: 4%;
+    margin-left: 2%;
+    font-size: 18px;
+}
+.aboutHead, .infoBox{
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+#para {
+    opacity: 0;
+    transition: all 0.5s ease;
+}

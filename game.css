@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: lightcyan;
+    color: #94E65C;
+}
+/* Animation  */
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+/* Game Box  */
+.container{
+    height: 80vh;
+    width: 38%;
+    position: absolute;
+    background-color: #94E65C;
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+    animation: fade 0.6s ease-in;
+}
+.line{
+    height: 33.33%;
+    display: flex;
+}
+.line2 {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.box{
+    height: 195px;
+    width: 195px;
+    background: lightcyan;
+    color: #214906;
+    border: none;
+    font-size: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid black;
+    overflow: hidden;
+    position: inherit;
+    text-wrap: nowrap;
+}
+.b3, .b6, .b9{
+    border: none;
+}
+.reset{
+    bottom: 10%;
+    right: 12%;
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    background-color: #94E65C;
+    border: none;
+    border-radius: 20%;
+    color: #fff;
+    font-size: 43px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    animation: fade 1s ease-in;
+}
+
+/* After Winning the game */
+.winBack{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+    display: none;
+    transition: all 0.2s ease-in;
+}
+.winBox{
+    position: absolute;
+    height: 28vh;
+    width: 30%;
+    border: 5px solid #94E65C;
+    border-radius: 20px;
+    background: #ffffff;
+    z-index: 100;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+    display: none;
+}
+.playAgain{
+    height: 8vh;
+    width: 150px;
+    border: none;
+    border-radius: 20%;
+    background-color: #94E65C;
+    color: #fff;
+    font-size: 23px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+

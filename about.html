@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Top menu  -->
+    <div class="menu">
+        <div class="left"></div>
+        <div class="mainMenu">
+            <a href="index.html" class="home">Home</a>
+            <a href="about.html" class="about">About</a>
+            <a href="projects.html" class="projects">Projects</a>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <!-- Side links -->
+    <div class="leftLink bar">
+        <a href="https://www.facebook.com/rohit.bej.92"><i class="fab fa-facebook social-icon"></i></a>
+        <a href="https://www.instagram.com/mr_rohit_7903/"><i class="fab fa-instagram social-icon"></i></a>
+        <a href="https://twitter.com/RohitBej4"><i class="fab fa-twitter social-icon"></i></a>
+    </div>
+    <div class="rightLink bar">
+        <a href="https://www.linkedin.com/in/rohit-bej-68954b289/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:23kgp017@iitism.ac.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+    <div class="aboutHead">About</div>
+    <div class="infoBox">
+        <div class="aboutText">
+            <p id="para">
+                <strong>Welcome to Tic Tac Toe Master!</strong><br><br>
+                Hey there! My name is Rohit. I am the Developer and Designer of this website. I am a first year <b>Mechanical Engineering</b> student at <b>IIT Kharagpur</b>. You can find my social media handles in the sidebars. You can also find the source code of this website in the same place(sidebars).<br><br>
+                This is my first project using <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b>. This is a digital adaptation of the timeless game of Tic Tac Toe, designed for players of all ages to enjoy.<br><br>
+                Tic Tac Toe is a classic pencil-and-paper game enjoyed by people of all ages around the world. Its simplicity belies a depth of strategy and tactics that make it endlessly engaging.<br><br>
+                The game is typically played on a 3x3 grid, where two players take turns marking spaces with their respective symbols, usually "X" and "O," until one player successfully aligns three of their symbols either horizontally, vertically, or diagonally. Despite its straightforward rules, Tic Tac Toe offers players the opportunity to anticipate their opponent's moves and strategically plan their own to secure victory.<br><br>
+                Tic Tac Toe's charm lies in its accessibility and versatility. It can be played virtually anywhere, from school classrooms to family gatherings, and requires nothing more than a pen and paper.<br><br>
+                If you liked this do follow me on Instagram<br><br>
+                Thank You!
+            </p>
+        </div>
+    </div>
+    <script>
+        let about = document.querySelector(".about");
+        about.onclick = () => {alert("You are in About.")};
+
+        let para = document.querySelector("#para");
+        setTimeout(() => {
+            para.style.opacity = "1";
+        }, 200)
+
+        let aboutHead = document.querySelector(".aboutHead");
+        let box = document.querySelector(".infoBox");
+        setTimeout(() => {
+            aboutHead.style.opacity = "1";
+            box.style.opacity = "1";
+        }, 150)
+    </script>
+</body>
+</html>
